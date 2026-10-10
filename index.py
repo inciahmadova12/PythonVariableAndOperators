@@ -194,8 +194,7 @@ c = int(input(""))
 
 if a + b > c:
     if a + c > b:
-        if b + c > a:
-            # Üçbucaq yaranır, tərəfləri müqayisə edirik
+        if b + c > a
             if a == b and b == c:
                 print("Equilateral")
             elif a == b or b == c or a == c:
