@@ -187,17 +187,16 @@ else:
     print(distance_fee)
 
 
-#
-a = int(input(""))
-b = int(input(""))
-c = int(input(""))
-
-if a + b > c:
-    if a + c > b:
-        if b + c > a
-            if a == b and b == c:
+#Triangle type
+a=int(input())
+b=int(input())
+c=int(input())
+if a+b>c:
+    if a+c>b:
+        if b+c>a:
+            if a==b and b==c:
                 print("Equilateral")
-            elif a == b or b == c or a == c:
+            elif a==b or b==c or a==c:
                 print("Isosceles")
             else:
                 print("Scalene")
@@ -207,3 +206,30 @@ if a + b > c:
         print("Triangle cannot be created")
 else:
     print("Triangle cannot be created")
+
+
+
+#University admission decision
+exam score=int(input())
+school score=float(input())
+age=int(input())
+if age<16:
+    print("Result: Rejected")
+    print("Reason: Age is below 16")
+else:
+    if exam score>=600:
+        print("Result: Scholarship")
+        print("Reason: Exam score is 600 or above")
+    elif exam score>=450:
+        print("Result: Accepted")
+        print("Reason: Exam score is between 450 and 599")
+    elif exam score>=300:
+        if school score>=80:
+            print("Result: Accepted")
+            print("Reason: Exam score is 300-449 and school score is 80 or above")
+        else:
+            print("Result: Rejected")
+            print("Reason: School score is below 80")
+    else:
+        print("Result: Rejected")
+        print("Reason: Exam score is below 300")
